@@ -16,7 +16,7 @@ export default function App() {
       <Route path="/" element= {
     <div className='App'>
       <div className="top1">
-        <h2 className='official'>WELCOME TO THE OFFICIAL PAGE OF MediAssist</h2>
+        <h2 className='official'>WELCOME TO THE OFFICIAL PAGE OF MediAssist+</h2>
         <Link to="/login" className='log'>LOGIN</Link>
     </div>
       <Navbar />
