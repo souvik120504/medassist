@@ -1,0 +1,325 @@
+*{
+  padding: 0;
+  margin:0;
+}
+.App{
+  height:100%;
+  width:100%;
+}
+/* .top{
+   width:100%;
+  background-color: aliceblue;
+  height:35px;
+
+} */
+.top1{
+ width:100%;
+  height:35px;
+  background-image: linear-gradient(to right, rgb(0, 0, 63),rgb(106, 209, 250));
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+
+}
+.official{
+  color: white;
+font-family: 'Times New Roman', Times, serif;
+}
+.log{
+  color: white;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+position:absolute;
+right:40px;
+font-size: 25px;
+letter-spacing: 2px;
+font-weight: 700;
+}
+.log:hover{
+  color:rgb(0, 0, 87);
+}
+
+.hero-sec{
+  height:450px;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: linear-gradient(45deg,rgb(2, 52, 71),rgb(124, 209, 243),white,whitesmoke,white,whitesmoke,aliceblue);
+}
+.hero-img{
+  height:400px;
+  width: 600px;
+  position:relative;
+  left:20px;
+}
+.hero-text{
+  height: 400px;
+  width:450px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stext1{
+  font-size:45px;
+  color: rgb(1, 1, 53);
+  height:200px;
+  width:100%;
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top:50px;
+}
+.stext2{
+  font-size:20px;
+  color: black;
+  position: relative;
+  bottom: 35px;
+  /* height:200px;
+  width:100%; */
+}
+.stext1:hover{
+  cursor: pointer;
+  color:rgb(0, 53, 53)
+}
+.card{
+  height:350px;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+   gap:80px;
+   background-color: rgb(233, 245, 248);
+}
+.card1,.card2,.card3{
+  height:300px;
+  width:280px;
+}
+.card1{
+  background-image: linear-gradient(to bottom,rgb(0, 62, 87),skyblue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+  border-radius: 10px;
+}
+.cardio1{
+  height:70px;
+  color:whitesmoke;
+  font-weight: 700;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+.cardio1:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.cardio2{
+  height:50px;
+  color:whitesmoke;
+  font-size: 15px;
+  text-align: center;
+}
+.cardio3{
+  height:40px;
+  width:40px;
+  background-color: pink;
+  color:black;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  top:10px;
+}
+.cardio3:hover{
+  cursor: pointer;
+  background-color: aliceblue;
+   width:100px;
+  border-radius:25px;
+  transition: 0.5s ease;
+}
+.card1:hover,.card2:hover,.card3:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.card2{
+  background-image: linear-gradient(to bottom,rgb(1, 37, 51),skyblue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+  border-radius: 10px;
+}
+.neuro1{
+  height:70px;
+  color:whitesmoke;
+  font-weight: 700;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+.neuro1:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.neuro2{
+  height:50px;
+  color:whitesmoke;
+  font-size: 15px;
+  text-align: center;
+}
+.neuro3{
+  height:40px;
+  width:40px;
+  background-color: rgb(200, 250, 250);
+  color:black;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  top:10px;
+}
+.neuro3:hover{
+  cursor: pointer;
+  background-color: aliceblue;
+   width:100px;
+  border-radius:25px;
+  transition: 0.5s ease;
+}
+.card3{
+  background-image: linear-gradient(to bottom,rgb(1, 37, 51),rgb(137, 220, 253));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+  border-radius: 10px;
+}
+.gyno1{
+  height:70px;
+  color:whitesmoke;
+  font-weight: 700;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+.gyno1:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.gyno2{
+  height:50px;
+  color:whitesmoke;
+  font-size: 15px;
+  text-align: center;
+}
+.gyno3{
+  height:40px;
+  width:40px;
+  background-color: rgb(245, 189, 198);
+  color:black;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  top:10px;
+}
+.gyno3:hover{
+  cursor: pointer;
+  background-color: aliceblue;
+  width:100px;
+  border-radius:25px;
+  transition: 0.5s ease;
+}
+.box4{
+  height:50px;
+  width: 100%;
+  font-weight: 900;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+  letter-spacing: 1px;
+   background-color: rgb(233, 245, 248);
+   border-top: 1px solid darkblue;
+}
+.feed{
+  height:300px;
+  display: flex;
+  justify-content: space-evenly;
+   background-color: rgb(233, 245, 248);
+}
+.contact{
+  height:270px;
+  width:250px;
+  position:relative;
+  top:15px;
+}
+.box5{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: darkslategray;
+  font-size:25px;
+}
+.box6,.box7{
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top:15px;
+  font-size: 18px;
+}
+.box8,.box9{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top:27px;
+  font-size: 18px;
+  text-align: center;
+}
+.box8{
+  font-size:20px;
+  font-weight: 800;
+}
+.box10,.box11{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top:40px;
+  font-size: 18px;
+  text-align: center;
+}
+.box10{
+  font-size:20px;
+  font-weight: 800;
+}
+/* rgb(0, 0, 54) */
+/* rgb(37, 1, 37) */
+
+
+
+
