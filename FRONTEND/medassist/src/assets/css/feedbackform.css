@@ -1,0 +1,63 @@
+.Feedback{
+    height:250px;
+    width:350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+button{
+    background-color: rgb(136, 231, 255);
+    height:30px;
+    width:150px;
+    font-size:18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: relative;
+    top:55px;
+    left:80px;
+    border-radius: 5px;
+}
+label{
+    font-size:19px;
+}
+textarea{
+    height:50px;
+    width:250px;
+    position:relative;
+    top:55px;
+    right:86px;
+}
+.email{
+    position: relative;
+    top:35px;
+    right: 40px;
+    height:20px;
+    width:300px;
+}
+.mail{
+    position:relative;
+    top:12px;
+}
+.name{
+    position: relative;
+    bottom:25px;
+}
+.nm{
+    position: relative;
+    right:42px;
+    bottom:5px;
+    width:250px;
+}
+.phone{
+    position: relative;
+    top:5px;
+}
+.ph{
+     position: relative;
+    left:5px;
+    top:7px;
+    width:250px;
+}
