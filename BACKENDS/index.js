@@ -18,6 +18,10 @@ const data = [
     {
         name: "user",
         password: "user123"
+    },
+    {
+        name: "guest",
+        password: "guest123"
     }
 ];
 
