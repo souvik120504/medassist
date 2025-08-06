@@ -1,5 +1,5 @@
 import sqlite3 from "sqlite3"
-console.log("node+database connection")
+console.log("node+database connections")
 
 const db = new sqlite3.Database("medi.db", sqlite3.OPEN_READWRITE)
 const createTableSql = `CREATE TABLE IF NOT EXISTS user (
