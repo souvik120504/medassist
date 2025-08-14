@@ -7,7 +7,8 @@ import FeedbackForm from "./FeedbackForm";
 import Service from "./Service";
 import Login from "./Login";
 import About from "./About";
-
+import Department from "./Department";
+import Medic from "./Medic";
 
 export default function App() {
   return (
@@ -29,7 +30,7 @@ export default function App() {
       <img src={doctor} alt="doctor" className='hero-img'></img>
       
     </div>
-    <div className="card">
+    <div className="card-medic">
       <div className="card1">
         <div className="cardio1">CARDIOLOGY</div>
         <div className="cardio2">The branch of medicine that focuses on diagnosing, treating, and preventing diseases of the heart and blood vessels.</div>
@@ -70,6 +71,8 @@ export default function App() {
 <Route path="/service" element={<Service />} />
 <Route path="/login" element={<Login />} />
 <Route path="/about" element={<About />} />
+<Route path="/department" element={<Department />} />
+<Route path="/department/:id" element={<Medic />} />
 </Routes>
 </BrowserRouter>
   );

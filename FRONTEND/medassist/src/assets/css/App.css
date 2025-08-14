@@ -59,6 +59,7 @@ font-weight: 700;
   display:flex;
   flex-direction: column;
   align-items: center;
+  gap:20px;
 }
 .stext1{
   font-size:45px;
@@ -83,7 +84,7 @@ font-weight: 700;
   cursor: pointer;
   color:rgb(0, 53, 53)
 }
-.card{
+.card-medic{
   height:350px;
   width:100%;
   display: flex;
