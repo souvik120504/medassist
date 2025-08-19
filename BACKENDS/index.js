@@ -1,7 +1,14 @@
-import sqlite3 from "sqlite3"
-console.log("node+database connections")
+import sqlite3 from "sqlite3";
+console.log("node+database connections");
 
-const db = new sqlite3.Database("medi.db", sqlite3.OPEN_READWRITE)
+const db = new sqlite3.Database("medi.db", sqlite3.OPEN_READWRITE | sqlite3.OPEN_CREATE, (err) => {
+    if (err) {
+        console.error("Error opening database:", err.message);
+    } else {
+        console.log("Connected to the database.");
+    }
+});
+
 const createTableSql = `CREATE TABLE IF NOT EXISTS user (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     NAME TEXT NOT NULL,
@@ -18,6 +25,10 @@ const data = [
     {
         name: "user",
         password: "user123"
+    },
+    {
+        name: "guest",
+        password: "guest123"
     }
 ];
 
@@ -41,14 +52,11 @@ db.serialize(() => {
     });
 });
 
-//showing the data in the table
-db.all(dispsql,[], (err,rows)=>
-{
-    if(err){
+// Showing the data in the table
+db.all(dispsql, [], (err, rows) => {
+    if (err) {
         console.log("Error fetching data:", err.message);
+    } else {
+        console.log("Data in the table:", rows);
     }
-    else{
-        console.log("data in the table",rows);
-
-    }
-})
+});
