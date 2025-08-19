@@ -50,8 +50,6 @@ body {
   background: linear-gradient(45deg, rgb(2, 52, 71), rgb(124, 209, 243), white);
 }
 
-.hero-text {
-  max-width: 500px;
 }
 
 .stext1 {
@@ -64,6 +62,7 @@ body {
 .stext1:hover {
   color: rgb(0, 53, 53);
   cursor: pointer;
+
 }
 
 .stext2 {
