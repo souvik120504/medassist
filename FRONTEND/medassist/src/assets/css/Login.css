@@ -5,13 +5,22 @@
   align-items: center;
   min-height: 100vh;
   background: #f0f4f9;
+  flex-direction: column;
+}
+#skip{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 /* Main container */
 .auth-container {
   position: relative;
   width: 700px;
-  height: 600px;
+  height: 500px;
   background: #fff;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -92,7 +101,7 @@
 
 /* Buttons */
 .Button {
-padding: 18px 25px;
+    padding: 10px 20px ;
     border: 2px solid #fff;
     background: #6996ee;
     color: #fff;
@@ -102,6 +111,9 @@ padding: 18px 25px;
     transition: 0.3s ease;
     left: 3%;
     top: 4%;
+    border-radius: 5px;
+    width: 200px;
+   
 }
 .Button:hover {
   background: #fff;
