@@ -6,7 +6,7 @@
 .anchor{
 text-decoration:none;
 font-size:18px;
-margin-top:25px;
+margin-bottom:20px;
 margin-left:15px;
 }
 .anchor:hover{
@@ -220,4 +220,19 @@ color:darkblue;
     font-size: 21px;
     color:rgb(1, 46, 46);
     font-style: italic;
+}
+
+#dept-btn{
+    height: 40px;
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: 0.5s ease;;
+}
+#dept-btn:hover{
+    background-color: rgb(1, 46, 46);
+    color: white;
+    cursor: pointer;
 }

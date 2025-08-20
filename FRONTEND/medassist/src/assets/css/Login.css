@@ -1,1 +1,187 @@
+/* Wrapper */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f4f9;
+  flex-direction: column;
+}
+#skip{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
 
+/* Main container */
+.auth-container {
+  position: relative;
+  width: 700px;
+  height: 500px;
+  background: #fff;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Forms container */
+.forms-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Login form */
+.login-form {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0; /* Login is on right */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  transition: all 0.6s ease-in-out;
+  z-index: 2;
+}
+
+/* Register form */
+.register-form {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0; /* Register is on left */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  transition: all 0.6s ease-in-out;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Toggle forms */
+.auth-container.register-mode .register-form {
+  opacity: 1;
+  pointer-events: auto;
+}
+.auth-container.register-mode .login-form {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Input box */
+.input-box {
+  position: relative;
+  margin: 10px 0;
+  width: 100%;
+}
+.input-box input {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.input-box i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+}
+
+/* Buttons */
+.Button {
+    padding: 10px 20px ;
+    border: 2px solid #fff;
+    background: #6996ee;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    left: 3%;
+    top: 4%;
+    border-radius: 5px;
+    width: 200px;
+   
+}
+.Button:hover {
+  background: #fff;
+  color: #6996ee;
+  border: 2px solid #6996ee;
+}
+
+/* Overlay container */
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/* Overlay panels */
+.overlay-panel {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: #6996ee;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  transition: transform 0.6s ease-in-out;
+  z-index: 5;
+}
+
+.overlay-panel h2 {
+  margin-bottom: 10px;
+}
+.overlay-panel p {
+  margin-bottom: 20px;
+}
+
+/* Left side (Register welcome) */
+.overlay-left {
+  left: 0;
+  border-top-right-radius: 50% 100%;
+  border-bottom-right-radius: 50% 100%;
+  transform: translateX(0);
+}
+
+/* Right side (Login welcome) */
+.overlay-right {
+  right: 0;
+  border-top-left-radius: 50% 100%;
+  border-bottom-left-radius: 50% 100%;
+  transform: translateX(0);
+}
+
+/* Show correct panel depending on mode */
+.auth-container.register-mode .overlay-left {
+  transform: translateX(-100%);
+}
+.auth-container.register-mode .overlay-right {
+  transform: translateX(0);
+}
+.auth-container:not(.register-mode) .overlay-left {
+  transform: translateX(0);
+}
+.auth-container:not(.register-mode) .overlay-right {
+  transform: translateX(100%);
+}
