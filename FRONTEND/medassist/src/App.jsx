@@ -9,6 +9,11 @@ import Login from "./Login";
 import About from "./About";
 import Department from "./Department";
 import Medic from "./Medic";
+import Doctors from "./Doctors";
+import Cardiology from "./Cardiology";
+import Neurology from "./Neurology";
+import Gynecology from './Gynecology';
+import Booking from './Booking';
 
 export default function App() {
   return (
@@ -35,21 +40,21 @@ export default function App() {
         <div className="cardio1">CARDIOLOGY</div>
         <div className="cardio2">The branch of medicine that focuses on diagnosing, treating, and preventing diseases of the heart and blood vessels.</div>
         <div className="cardio3">
-          <a href="#">></a>
+          <Link to="/cardiology">></Link>
         </div>
       </div>
       <div className="card2">
         <div className="neuro1">NEUROLOGY</div>
         <div className="neuro2">The medical specialty dedicated to diagnosing and treating disorders of the brain, spinal cord, and nervous system</div>
         <div className="neuro3">
-          <a href="#">></a>
+          <Link to="/neurology">></Link>
         </div>
       </div>
       <div className="card3">
         <div className="gyno1">GYNAECOLOGY</div>
         <div className="gyno2">The branch of medicine that focuses on the health, diagnosis, and treatment of the female reproductive system.</div>
         <div className="gyno3">
-          <a href="#">></a>
+          <Link to="/gynecology">></Link>
         </div>
       </div>
     </div>
@@ -73,6 +78,11 @@ export default function App() {
 <Route path="/about" element={<About />} />
 <Route path="/department" element={<Department />} />
 <Route path="/department/:id" element={<Medic />} />
+<Route path="/doctors" element={<Doctors />} />
+<Route path="/doctors/:id" element={<Booking />} />
+<Route path="/cardiology" element={<Cardiology />} />
+<Route path="/neurology" element={<Neurology />} />
+<Route path="/gynecology" element={<Gynecology />} />
 </Routes>
 </BrowserRouter>
   );
