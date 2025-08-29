@@ -232,8 +232,7 @@ const Department = () => {
     justifyContent: "center",  // Optional: center horizontally
     alignItems: "center",      // Optional: align vertically
     margin: "20px 0"
-  }}
->
+  }}>
   <input
     type="text"
     placeholder="Search department..."
@@ -250,7 +249,7 @@ const Department = () => {
     Search
   </button>
 </form>
-            </div>
+</div>
              
             <div className="grid-container">
                 {filteredDepartments.length > 0 ? filteredDepartments.map((dept) => (
@@ -259,20 +258,27 @@ const Department = () => {
                             <img src={dept.image} alt={dept.name} />
                         </div>
                         <div className="card-content">
-                            <h3 className="card-title">{dept.title}</h3>
-                        <h4 className="card-name">{dept.name}</h4>                       
-                        <p className="card-description">{dept.description}</p>
-                        <ol className="card-list">
-                            <li><p>{dept.s1}</p></li>
-                            <li><p>{dept.s2}</p></li>
-                            <li><p>{dept.s3}</p></li>
-                        </ol>
-                         <Link to={`/department/${dept.id}`} className="card-link">Learn More</Link>
+                            {/* Make sure these classNames match your CSS */}
+                            <h2 className="department-name">{dept.name}</h2>
+                            
+                            <h3 className="department-title">{dept.title}</h3>
+                            
+                            <p className="department-description">{dept.description}</p>
+                            <ul className="department-features">
+                                <li>{dept.s1}</li>
+                                <li>{dept.s2}</li>
+                                <li>{dept.s3}</li>
+                            </ul>
+                            <Link to={`/department/${dept.id}`} className="learn-more-btn">
+                                Learn More
+                            </Link>
                         </div>
                                              
                     </div>
                 )) : (
-                    <div style={{ gridColumn: "1/-1", textAlign: "center", color: "#888" }}>No departments found.</div>
+                    <div style={{ gridColumn: "1/-1", textAlign: "center", color: "#888" }}>
+                        No departments found.
+                    </div>
                 )}
             </div>
         </div>

@@ -1,326 +1,203 @@
-*{
+* {
   padding: 0;
-  margin:0;
-}
-.App{
-  height:100%;
-  width:100%;
-}
-/* .top{
-   width:100%;
-  background-color: aliceblue;
-  height:35px;
-
-} */
-.top1{
- width:100%;
-  height:35px;
-  background-image: linear-gradient(to right, rgb(0, 0, 63),rgb(106, 209, 250));
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-
-}
-.official{
-  color: white;
-font-family: 'Times New Roman', Times, serif;
-}
-.log{
-  color: white;
-font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-position:absolute;
-right:40px;
-font-size: 25px;
-letter-spacing: 2px;
-font-weight: 700;
-}
-.log:hover{
-  color:rgb(0, 0, 87);
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.hero-sec{
-  height:450px;
-  width:100%;
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #f9f9f9;
+}
+
+/* Top Banner */
+.top1 {
+  width: 100%;
+  padding: 8px 20px;
+  background-image: linear-gradient(to right, rgb(0, 0, 63), rgb(106, 209, 250));
   display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.official {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.log {
+  color: white;
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.log:hover {
+  color: rgb(0, 0, 87);
+}
+
+/* Hero Section */
+.hero-sec {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  background-image: linear-gradient(45deg,rgb(2, 52, 71),rgb(124, 209, 243),white,whitesmoke,white,whitesmoke,aliceblue);
+  padding: 40px 20px;
+  background: linear-gradient(45deg, rgb(2, 52, 71), rgb(124, 209, 243), white);
 }
-.hero-img{
-  height:400px;
-  width: 600px;
-  position:relative;
-  left:20px;
+
+.hero-text {
+  max-width: 500px;
 }
-.hero-text{
-  height: 400px;
-  width:450px;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  gap:20px;
-}
-.stext1{
-  font-size:45px;
+
+.stext1 {
+  font-size: 42px;
+  font-weight: 800;
   color: rgb(1, 1, 53);
-  height:200px;
-  width:100%;
-  display: flex;
-  align-items: center;
-  font-weight: 800;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding-top:50px;
-}
-.stext2{
-  font-size:20px;
-  color: black;
-  position: relative;
-  bottom: 35px;
-  /* height:200px;
-  width:100%; */
-}
-.stext1:hover{
-  cursor: pointer;
-  color:rgb(0, 53, 53)
-}
-.card-medic{
-  height:350px;
-  width:100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-   gap:80px;
-   background-color: rgb(233, 245, 248);
-}
-.card1,.card2,.card3{
-  height:300px;
-  width:280px;
-}
-.card1{
-  background-image: linear-gradient(to bottom,rgb(0, 62, 87),skyblue);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5s ease;
-  border-radius: 10px;
-}
-.cardio1{
-  height:70px;
-  color:whitesmoke;
-  font-weight: 700;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-}
-.cardio1:hover{
-  text-decoration: underline;
-  cursor: pointer;
-  transition: 0.5s ease;
+  margin-bottom: 20px;
 }
 
-.cardio2{
-  height:50px;
-  color:whitesmoke;
-  font-size: 15px;
-  text-align: center;
-}
-.cardio3{
-  height:40px;
-  width:40px;
-  background-color: pink;
-  color:black;
-  font-size: 25px;
-  text-align: center;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position:relative;
-  top:10px;
-}
-.cardio3:hover{
+.stext1:hover {
+  color: rgb(0, 53, 53);
   cursor: pointer;
-  background-color: aliceblue;
-   width:100px;
-  border-radius:25px;
-  transition: 0.5s ease;
 }
-.card1:hover,.card2:hover,.card3:hover{
-  cursor: pointer;
-  transform: scale(1.1);
+
+.stext2 {
+  font-size: 18px;
+  color: black;
+  line-height: 1.4;
 }
-.card2{
-  background-image: linear-gradient(to bottom,rgb(1, 37, 51),skyblue);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5s ease;
-  border-radius: 10px;
-}
-.neuro1{
-  height:70px;
-  color:whitesmoke;
-  font-weight: 700;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-}
-.neuro1:hover{
-  text-decoration: underline;
-  cursor: pointer;
-  transition: 0.5s ease;
-}
-.neuro2{
-  height:50px;
-  color:whitesmoke;
-  font-size: 15px;
-  text-align: center;
-}
-.neuro3{
-  height:40px;
-  width:40px;
-  background-color: rgb(200, 250, 250);
-  color:black;
-  font-size: 25px;
-  text-align: center;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position:relative;
-  top:10px;
-}
-.neuro3:hover{
-  cursor: pointer;
-  background-color: aliceblue;
-   width:100px;
-  border-radius:25px;
-  transition: 0.5s ease;
-}
-.card3{
-  background-image: linear-gradient(to bottom,rgb(1, 37, 51),rgb(137, 220, 253));
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5s ease;
-  border-radius: 10px;
-}
-.gyno1{
-  height:70px;
-  color:whitesmoke;
-  font-weight: 700;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-}
-.gyno1:hover{
-  text-decoration: underline;
-  cursor: pointer;
-  transition: 0.5s ease;
-}
-.gyno2{
-  height:50px;
-  color:whitesmoke;
-  font-size: 15px;
-  text-align: center;
-}
-.gyno3{
-  height:40px;
-  width:40px;
-  background-color: rgb(245, 189, 198);
-  color:black;
-  font-size: 25px;
-  text-align: center;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position:relative;
-  top:10px;
-}
-.gyno3:hover{
-  cursor: pointer;
-  background-color: aliceblue;
-  width:100px;
-  border-radius:25px;
-  transition: 0.5s ease;
-}
-.box4{
-  height:50px;
+
+.hero-img {
+  max-width: 500px;
   width: 100%;
-  font-weight: 900;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Cards Section */
+.card-cont {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex; /* Centered for horizontal layout */
+  justify-content: center; /* This line helps cards space evenly */
+  gap: 30px; /* Space between cards */
+  padding: 40px 20px;
+  background-color: rgb(233, 245, 248);
+}
+.card1, .card2, .card3 {
+  flex: 1; /* Allows the cards to grow and occupy space */
+  max-width: 350px; /* Optional */
+  border-radius: 12px;
+  padding: 20px;
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background: linear-gradient(to bottom, #033649, #6db3f2);
+  color: white;
+}
+
+.card1 { background: linear-gradient(to bottom, rgb(0, 62, 87), skyblue); }
+.card2 { background: linear-gradient(to bottom, rgb(1, 37, 51), skyblue); }
+.card3 { background: linear-gradient(to bottom, rgb(1, 37, 51), rgb(137, 220, 253)); }
+
+.card1:hover, .card2:hover, .card3:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Card Titles */
+.cardio1, .neuro1, .gyno1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.cardio1:hover, .neuro1:hover, .gyno1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Card Descriptions */
+.cardio2, .neuro2, .gyno2 {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+/* Circle Button */
+.cardio3, .neuro3, .gyno3 {
+  height: 40px;
+  width: 40px;
+  background-color: pink;
   color: black;
-  letter-spacing: 1px;
-   background-color: rgb(233, 245, 248);
-   border-top: 1px solid darkblue;
-}
-.feed{
-  height:300px;
-  display: flex;
-  justify-content: space-evenly;
-   background-color: rgb(233, 245, 248);
-}
-.contact{
-  height:270px;
-  width:250px;
-  position:relative;
-  top:15px;
-}
-.box5{
+  font-size: 20px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: darkslategray;
-  font-size:25px;
+  margin: auto;
+  transition: all 0.3s ease;
 }
-.box6,.box7{
-   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top:15px;
-  font-size: 18px;
+
+.neuro3 { background-color: rgb(200, 250, 250); }
+.gyno3 { background-color: rgb(245, 189, 198); }
+
+.cardio3:hover, .neuro3:hover, .gyno3:hover {
+  cursor: pointer;
+  width: 100px;
+  border-radius: 25px;
+  background-color: aliceblue;
 }
-.box8,.box9{
+
+/* Contact Section */
+.box4 {
+  padding: 15px;
+  font-size: 26px;
+  font-weight: 900;
+  text-align: center;
+  background-color: rgb(233, 245, 248);
+  border-top: 1px solid darkblue;
+}
+
+.feed {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
-  position: relative;
-  top:27px;
-  font-size: 18px;
+  padding: 30px;
+  background-color: rgb(233, 245, 248);
+}
+
+.contact {
+  max-width: 250px;
+  font-size: 16px;
+}
+
+.box5 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
   text-align: center;
 }
-.box8{
-  font-size:20px;
-  font-weight: 800;
-}
-.box10,.box11{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top:40px;
-  font-size: 18px;
+
+.box6, .box7, .box8, .box9, .box10, .box11 {
+  margin: 5px 0;
   text-align: center;
 }
-.box10{
-  font-size:20px;
+
+.box8, .box10 {
   font-weight: 800;
 }
-/* rgb(0, 0, 54) */
-/* rgb(37, 1, 37) */
 
-
-
-
+/* Responsive */
+#login-png {
+  width: 80px;
+  height: 30px;
+  margin-right: 10px;
+}

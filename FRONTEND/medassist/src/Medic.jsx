@@ -899,7 +899,9 @@ return(
                     <div className="news-card">{department.ntextb}</div>
                     <div className="news-card">{department.ntextc}</div>
                 </div>
-                <Link to="/department" className="anchor">Back to Departments</Link>
+                
+                <Link to="/department" className="anchor"><button id='dept-btn'>Back to Departments</button></Link>
+                
     </div>
 );
 };
